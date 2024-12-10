@@ -1,0 +1,348 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Section styles */
+section {
+  padding: 20px;
+  margin: 10px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Blog Styles */
+#blog {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.blog-post {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h3 {
+  color: #333;
+}
+
+.blog-post a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.blog-post a:hover {
+  text-decoration: underline;
+}
+
+/* Animation: Fade In */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}
+
+/* Home Section Styles */
+.home-section {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  background-image: url("https://wallpapercave.com/wp/wp6350578.jpg"); /* Add a background image */
+  background-size: cover; /* Ensure the background image covers the entire section */
+  background-position: center; /* Center the background image */
+  color: rgb(2, 1, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10px 10%; /* Add padding on smaller screens */
+  overflow: hidden;
+}
+
+/* Home Content Styles */
+.home-content {
+  max-width: 600px; /* Limit the width of the content */
+  color: #fff;
+}
+
+.home-content h1 {
+  font-size: 4rem; /* Large heading */
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;
+  font-weight: 700; /* Make the heading bold */
+  animation: fadeIn 1.5s ease-out; /* Fade-in animation */
+}
+
+.home-content p {
+  font-size: 1.5rem; /* Set font size for the paragraph */
+  margin-bottom: 30px;
+  font-weight: 300; /* Lighter weight for the paragraph */
+  animation: fadeIn 2s ease-out; /* Fade-in animation with delay */
+}
+
+/* Call-to-Action Button */
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ff5733; /* Custom button color */
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 50px; /* Rounded corners for the button */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for the CTA button */
+.cta-button:hover {
+  background-color: #e04f28; /* Darker shade of the button color */
+  transform: translateY(-5px); /* Slightly lift the button on hover */
+}
+
+/* Animation: Fade In (for content elements) */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  /* Adjust text sizes for smaller screens */
+  .home-content h1 {
+      font-size: 2.5rem;
+  }
+
+  .home-content p {
+      font-size: 1.2rem;
+  }
+
+  /* Adjust layout of sections for smaller screens */
+  section {
+      padding: 10px;
+  }
+
+  /* Ensure the footer stays at the bottom */
+  footer {
+      position: relative;
+  }
+
+  /* Adjust the navigation bar for smaller screens */
+  header nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  header nav ul li {
+      margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust home content width for mobile */
+  .home-content {
+      max-width: 90%; /* More space for smaller devices */
+  }
+  
+  /* Adjust CTA button size for mobile */
+  .cta-button {
+      font-size: 1.1rem;
+      padding: 12px 24px;
+  }
+}
+/* Login Section Styles */
+#login {
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#login h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#login form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#login form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#login form button {
+  padding: 12px;
+  background-color: #ff5733; /* Button color */
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#login form button:hover {
+  background-color: #e04f28;
+  transform: translateY(-3px);
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.forgot-password a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+/* Sign Up Section Styles */
+#signup {
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#signup h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#signup form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#signup form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#signup form button {
+  padding: 12px;
+  background-color: #ff5733; /* Button color */
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#signup form button:hover {
+  background-color: #e04f28;
+  transform: translateY(-3px);
+}
+
+#signup p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#signup p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#signup p a:hover {
+  text-decoration: underline;
+}
+.logo img{
+  width: 50px;
+  margin-top: 20px;
+  margin-right: 48px;
+
+}
+html {
+  scroll-behavior: smooth;
+}
+<style>
+    body.dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+    </style>
