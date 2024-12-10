@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent Chiriba</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="logo"><img src="https://wallpapercave.com/wp/wp12838965.jpg" alt="Website Logo"></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#login">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+      <div class="home-content">
+        <h1>Welcome to Vincent Chiriba's Website</h1>
+        <p>This is the homepage of my awesome website!</p>
+        <a href="#contact" class="cta-button">
+          <span>Get in Touch</span>
+          </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Vincent</h2>
+      <p>Learn more about Vincent here.</p>
+    </section>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    
+    <!-- Services Section -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <p>Details of the services offered by Vincent Chiriba.
+        
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Submit</button>
+      </form>
+      <div id="response-message"></div>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="login-email">Email:</label>
+        <input type="email" id="login-email" name="login-email" required placeholder="Enter your email">
+        
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" name="login-password" required placeholder="Enter your password">
+        
+        <button type="submit" class="cta-button">Login</button>
+      </form>
+      <p class="forgot-password"><a href="#">Forgot Password?</a></p>
+      <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+    </section>
+
+    <!-- Sign Up Section -->
+    <section id="signup" style="display:none;">
+      <h2>Sign Up</h2>
+      <form id="signup-form">
+        <label for="signup-name">Full Name:</label>
+        <input type="text" id="signup-name" name="signup-name" required placeholder="Enter your full name">
+        
+        <label for="signup-email">Email:</label>
+        <input type="email" id="signup-email" name="signup-email" required placeholder="Enter your email">
+        
+        <label for="signup-password">Password:</label>
+        <input type="password" id="signup-password" name="signup-password" required placeholder="Enter your password">
+        
+        <button type="submit" class="cta-button">Sign Up</button>
+      </form>
+      <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="C:\Users\KONZA-VDI\Desktop\New folder\GWPB6254.JPG" alt="Description of Image 1">
+        </div>
+        <div class="gallery-item">
+          <img src="path/to/your/image2.jpg" alt="Description of Image 2">
+        </div>
+        <div class="gallery-item">
+          <img src="path/to/your/image3.jpg" alt="Description of Image 3">
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+      <h2>What People Say</h2>
+      <div class="testimonial">
+        <p>"Vincent's work is outstanding! Highly recommended."</p>
+        <span>- Jane Doe</span>
+      </div>
+      <div class="testimonial">
+        <p>"A true professional with an eye for detail."</p>
+        <span>- John Smith</span>
+      </div>
+    </section>
+  
+    
+
+    <!-- Blog Section -->
+    <section id="blog">
+      <h2>Latest Blog Posts</h2>
+      <article class="blog-post">
+        <h3>How to Start with Web Development</h3>
+        <p>Learn the basics of building your first website...</p>
+        <a href="#">Read more</a>
+      </article>
+      <article class="blog-post">
+        <h3>Why You Should Learn JavaScript</h3>
+        <p>JavaScript powers the web. Discover why...</p>
+        <a href="#">Read more</a>
+      </article>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>What services do you offer?</summary>
+        <p>I offer web development, app development, and consulting services.</p>
+      </details>
+      <details>
+        <summary>How can I contact you?</summary>
+        <p>Fill out the contact form or email me vinlawz@gmail.com</p>
+      </details>
+    </section>
+
+    <!--Newsletter section-->
+    <section id="newsletter">
+      <h2>Stay Updated</h2>
+      <p>Sign up for our newsletter to get the latest updates.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <!--support section-->
+    <section id="support">
+      <h2>Support My Work</h2>
+      <p>If you love my work, consider supporting me!</p>
+      <button onclick="window.location.href='https://www.paypal.com/donate'">Donate</button>
+    </section>
+
+    <!--error section-->
+    <section id="error-404">
+      <h2>Oops! Page Not Found</h2>
+      <p>The page you're looking for doesn't exist.</p>
+      <a href="#home">Return to Home</a>
+    </section>
+    
+    
+
+    <footer>
+      <p>&copy; 2024 Vincent Chiriba's Website</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
